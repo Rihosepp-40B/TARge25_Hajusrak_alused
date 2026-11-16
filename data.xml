@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modernconsoles>
+    <console>
+        <name>Playstation 2</name>
+        <price>199.99</price>
+        <company>Sony</company>
+    </console>
+    <console>
+        <name>Switch</name>
+        <price>400.00</price>
+        <company>Nitendo</company>
+    </console>
+    <console>
+        <name>Mega Drive</name>
+        <price>249.00</price>
+        <company>Sega</company>
+    </console>
+    <console>
+        <name>Steam Deck 2</name>
+        <price>800.00</price>
+        <company>Valve</company>
+    </console>
+</modernconsoles>
