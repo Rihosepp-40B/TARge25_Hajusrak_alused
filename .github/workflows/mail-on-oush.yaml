@@ -16,7 +16,7 @@ jobs:
           Hello team,
           A hot single commit has been detected in your area. Please review changesm and merge into main branch.
 
-          Hot single commit commiting: ${{github.event.pusher.name}}
-          Changes:
+          Hot single commit commiting ${{github.event.pusher.name}}
+          Changes
          to: "rihosepp@gmail.com"
          from: "Github actions from ${{github.repository}}"
