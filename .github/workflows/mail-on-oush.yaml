@@ -1,0 +1,22 @@
+on:
+  push:
+jobs:
+  mail_on_push:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Send email to this address
+       uses: dawidd6/action-send-mail@v3
+       with:
+         server_Address: smtp.gmail.com
+         server_port: 587
+         username: ${{secrets.MAIL_USERNAME}}
+         password: ${{secrets.MAIL_PASSWORD}}
+         subject: "ALERT, WE HAVE DETECTED HOT SINGLE COMMITS IN YOUR AREA ${{github.repository}}"
+         body:
+          Hello team,
+          A hot single commit has been detected in your area. Please review changesm and merge into main branch.
+
+          Hot single commit commiting: ${{github.event.pusher.name}}
+          Changes:
+         to: "jyri.vaitmaa@techno.ee"
+         from: "Github actions from ${{github.repository}}"
